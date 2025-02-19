@@ -44,57 +44,6 @@
 
     echo "<br> <br> a = $a e b = $b";  // Stampa: a = 2 e b = 1  
 
-    ?>
-
-
-    <h2>Operatori aritmetici</h2>
-
-    <?php
-
-    //esercizio n.2
-    //$p il prezzo di un prodotto
-    //visualizzare il prezzo ivato (cioè + il 22%)
-
-    $p = 100;
-    $p_ivato = $p + (($p * 22) / 100); //calcolo percentuale
-    echo "<br> <br> Il prezzo compreso di IVA è " . $p_ivato;
-
-    $p = 100;     // prezzo del prodotto
-    // $p + (22% di $p)
-    $iva =  22 / 100 * $p;  // calcolo dell'iva conviene separarlo se devo riutilizzare questa variabile
-    echo "<br> iva = $iva"; // Stampa: iva = 22
-    $p_ivato = $p + $iva;  // calcolo del prezzo ivato
-    echo "<br>prezzo ivato " . $p_ivato;  // Stampa: prezzo ivato 122
-
-
-    echo "<hr>";
-
-    //esercizio n.3   
-    //Operatore di concatenazione .
-
-    $testo = "testo n.1";
-
-    $testo = $testo . " testo n.2";
-
-    //$testo = $testo . " testo n.3";
-    $testo .= " testo n. 3";  // è uguale alla riga sopra ma meno ripetitiva
-    echo $testo; // Stampa: testo n.1 testo n.2 testo n. 3
-
-
-    // incremento
-    $x = 1;
-    $x = $x + 1; //x vale 2
-
-    // stessa cosa di sopra
-    $x += 1; // $x = $x + 1; //x vale 3
-    echo "<br> <br> x = $x";  // Stampa: x = 3
-
-    $x++; //incremento di 1 // $x = $x + 1; //x vale 4 
-    echo "<br> x dopo il ++ = $x";  // Stampa: x dopo il ++ = 4
-
-    $y = 1;
-    //$y++; //incremento di 1 unità //scritto così, prima stampa, poi calcola quindi con un echo "$y++" stamperebbe 1 e poi lo salva come variabile in 2
-    echo "<br> y dopo il ++ = " . (++$y); // Stampa: y dopo il ++ = 2 // scritto così, prima calcola, poi stampa quindi con un echo "++$y" stamperebbe 2 e poi lo salva come variabile in 2
 
 
 
