@@ -45,7 +45,43 @@
 
     echo "<hr> <h2>Esercizio 5</h2>";
 
-    //Dato $numero scrivere a quale decina appartiene (es 1 nella 1° decina, 11 nella 2°, 21 nella 3°, ecc.)
+    /* Antonio $a, Bruno $B e Carlo $C mangiano al ristorante
+Antonio: pasta 9 euro, verdura 5 euro e caffe 1 euro;
+Bruno: pasta 8 euro, verdura 6 euro e caffe 1 euro;
+Carlo: pasta 11 euro, verdura 4 euro e caffe 1 euro;
+
+Costo medio a persona?
+Decidono di dividere in parti uguali, arrotondando all'euro.
+Quanto lasciano di mancia? */
+
+    $a_p = 9;
+    $a_v = 5;
+
+    $b_p = 8;
+    $b_v = 6;
+
+    $c_p = 11;
+    $c_v = 4;
+
+    $c = 1;
+
+    $tot = $a_p + $a_v + $b_p + $b_v + $c_p + $c_v + 3 * $c;
+
+    echo "Il costo totale è $tot euro <br>";
+    $media = $tot / 3;
+
+
+    echo "Il costo medio a persona è " . ceil($media) . " euro <br>";  // ceil arrotonda per eccesso
+
+    $mancia = ceil($media) * 3 - $tot;
+
+    if ($mancia == 0) {
+        echo "Non c'è mancia";
+    } else
+        echo "La mancia è " . $mancia . " euro";
+
+
+    echo "<hr> <h2>Esercizio 6</h2>";
 
     ?>
 </body>
