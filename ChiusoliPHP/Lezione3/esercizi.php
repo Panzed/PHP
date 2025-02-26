@@ -16,8 +16,8 @@
     //Dati $a e $b, calcolare la media tra i 2 numeri e stampare il risultato
     $a = 10;
     $b = 20;
-    $mesia = ($a + $b) / 2;
-    echo "La media tra $a e $b è " . $mesia;
+    $media = ($a + $b) / 2;
+    echo "La media tra $a e $b è " . $media;
 
     echo "<hr> <h2>Esercizio 2</h2>";
 
@@ -69,9 +69,10 @@ Quanto lasciano di mancia? */
 
     echo "Il costo totale è $tot euro <br>";
     $media = $tot / 3;
+    echo "Il costo medio a persona è di " . $media;
 
 
-    echo "Il costo medio a persona è " . ceil($media) . " euro <br>";  // ceil arrotonda per eccesso
+    echo "<br> Il costo medio a personaarrotondato è " . ceil($media) . " euro <br>";  // ceil arrotonda per eccesso
 
     $mancia = ceil($media) * 3 - $tot;
 

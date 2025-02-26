@@ -16,7 +16,6 @@
 
     if ($a > $b) {
         echo "a è maggiore di b";
-        $b = $a + 1;
     } else {
         if ($a == $b)
             echo "a è uguale a b";

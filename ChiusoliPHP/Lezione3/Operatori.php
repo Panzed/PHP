@@ -72,6 +72,9 @@
 
     <?php
 
+    $a = 5;
+    $b = 4;
+
     echo $a < $b;  // Stampa: niente perchè è falso
     echo ($a > $b);  // Stampa: 1 perchè è vero
 

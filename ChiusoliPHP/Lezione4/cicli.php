@@ -50,10 +50,11 @@
 
     // scrivere i primi 7 multipli di 10 indicando a fianco il numero progressivo 
     $p = 1;  // partenza
-    $m = 10;  // multiplo
+    $m = 10;  // multipli
     $n = 7;  // quanti multipli
 
     for ($i = 1; $i <= $n; $i++)
+
         echo $i . ") " . $m * $i . "<br>";
 
     echo "<hr>";
