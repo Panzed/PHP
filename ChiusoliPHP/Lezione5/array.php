@@ -13,7 +13,7 @@
     <?php
 
     //Creazione array
-    $a = [10, 20, 30, 40];  // L'ordine dell'array parte sempre da 0 (quindi 1 è in posizione 0, 2 è in posizione 1, ecc.)
+    $a = [10, 20, 30, 40];  // L'ordine dell'array parte sempre da 0 (quindi 10 è in posizione 0, 20 è in posizione 1, ecc.)
 
     $a[0] = 10; // Modifica il valore in posizione 0
 
@@ -63,9 +63,7 @@
     $e = "terzo";
     $trovato = false;
     $n_trovati = 0;
-    $a[] = "terzino"; //aggiunge in fondo all'array - assegna il primo indice numerico disponibile
-    $a[] = "terzo"; //indice = 8
-    $indici = [];  // array degli indici trovati
+    $indici = [];  // array vuoto degli indici trovati
     for ($i = 0; $i < count($a); $i++) {
         //$trovato = ($a[$i] == $e) ? true: false;
 
@@ -79,7 +77,7 @@
     }
 
     //RISULTATI
-    if ($trovato) {
+    if ($trovato == true) {
         echo "$e l'ho trovato $n_trovati volte in posizione:";
         //stampa del contenuto di $indici 
         //(vedi ore 10:30 di oggi)
@@ -106,24 +104,6 @@
 
     echo "<hr>";
 
-    //COMPITI PER CASA
-    //1. Creare un array di 10 elementi e stamparli
-    //2. Incrementare di 1 tutti gli elementi dell'array e stamparli
-    //3. Stampare la somma di tutti gli elementi dell'array
-    //4. Stampare la media di tutti gli elementi dell'array
-    //5. Trovare un elemento all'interno dell'array e stampare l'indice
-    //6. Trovare tutti gli elementi all'interno dell'array e stampare gli indici
-    //7. Trovare tutti gli elementi all'interno dell'array e stampare il numero di volte che si ripetono
-
-    //8. Cercare il max di $a = [1,2,3,4,5] e stamparlo
-    //9. Cercare il min di $a = [1,2,3,4,5] e stamparlo
-    //10. Cercare il max di $a = [5,4,3,2,1] e stamparlo
-    //11. Cercare il min di $a = [5,4,3,2,1] e stamparlo
-
-
-
-    //creare un array dinamico di 10 elementi
-    //se pari stampa il contenuto, se dispari stampa il doppio del contenuto
 
 
     ?>
