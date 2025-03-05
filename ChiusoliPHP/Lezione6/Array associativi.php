@@ -104,11 +104,6 @@
         //1 riga per ogni persona
         echo "<tr>";
         foreach ($persona as $k => $v) {
-            //se sei la persona con il primo indice, aggiungi la riga delle etichette
-            if ($indice == 0) {
-            }
-
-            //1 cella per ogni valore della persona
             echo "<td>$v</td>";
         }
         echo "</tr>";
