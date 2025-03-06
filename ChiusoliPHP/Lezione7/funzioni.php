@@ -17,7 +17,6 @@
 
     print_r($a);
 
-    phpinfo();
 
     ?>
 </body>
