@@ -26,6 +26,11 @@ function raw2userBis($data)
 //PER CASA  
 function user2raw($data) {}
 
+function anno($data)
+{
+    return substr($data, 0, 4);
+}
+
 
 //somma gli elementi di un array se la fz numeroPari è vera
 function sommaArray($a)

@@ -9,8 +9,8 @@
 
 <body>
     <?php
-    include("lista funzioni.php");
-    //require_once("lista funzioni.php");
+    include("./lista-funzioni.php");
+    //require_once("lista-funzioni.php");
 
 
     
