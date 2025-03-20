@@ -132,7 +132,7 @@ include("../lista-funzioni.php");
 
     foreach($coordinatori as $nome_coordinatore => $coordinatore ){
         echo $nome_coordinatore. " corsi: ".$coordinatore['n_corsi'];
-        echo " partecipanti: ". $coordinatore['n_partecipanti']."<br>;
+        echo " partecipanti: ". $coordinatore['n_partecipanti']."<br>";
     }
 
 
