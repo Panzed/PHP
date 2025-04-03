@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form
+            action="action.php"
+            method="get"
+            enctype="multipart/form-data"
+            style="border: 1px solid orange"
+            id="form1"
+        >
+            <fieldset style="border: 1px solid rgb(0, 0, 255)">
+                <legend>Nominativo</legend>
+                <label for="nome" autocomplete="off">Nome:</label>
+                <input type="text" name="nome" placeholder="Nome" id="nome" />
+                <label for="cognome">Cognome</label>
+                <input
+                    type="text"
+                    name="cognome"
+                    placeholder="Cognome"
+                    id="cognome"
+                    autofocus
+                    required
+                />
+            </fieldset>
+            <br />
+            <fieldset style="border: 1px solid rgb(0, 0, 255)">
+                <legend>Residenza</legend>
+                <label for="indirizzo">Indirizzo:</label>
+                <input type="text" name="indirizzo" id="indirizzo" />
+                <label for="cap">Cap:</label>
+                <input type="text" name="cap" id="cap" pattern="[0-9]{5}" />
+            </fieldset>
+            <br />
+            <fieldset style="border: 1px solid rgb(0, 0, 255)">
+                <legend>Lista type input</legend>
+                <input type="checkbox" name="privacy" id="privacy" required />
+                <label for="privacy">Accetto il trattamento ...</label>
+                <br />
+                <label for="colore">Colore:</label>
+                <input type="color" name="colore" id="colore" value="#100fff" />
+                <br />
+                <label for="cartaid">Carta ID</label>
+                <input type="file" name="cartaid" id="cartaid" />
+            </fieldset>
+            <br />
+            <fieldset style="border: 1px solid rgb(0, 0, 255)">
+                <legend>Tipo di utente:</legend>
+                <input type="radio" name="tipo" id="tipo1" value="1" />
+                <label for="tipo1">Privato</label>
+                <input type="radio" name="tipo" id="tipo2" value="2" />
+                <label for="tipo2">Azienda</label>
+                <br />
+                <label for="colore-preferito">Colore preferito</label>
+                <select name="colore-preferito" id="colore-preferito">
+                    <option value="-">-</option>
+                    <optgroup label="Colori 1">
+                        <option value="bianco">bianco</option>
+                        <option value="nero">nero</option>
+                    </optgroup>
+                    <optgroup label="Colori 2">
+                        <option value="blue">blue</option>
+                        <option value="verde">verde</option>
+                        <option value="rosso">rosso</option>
+                    </optgroup>
+                </select>
+                <br />
+                <br />
+                <textarea
+                    name="messaggio"
+                    id="messaggio"
+                    rows="5"
+                    cols="50"
+                ></textarea>
+            </fieldset>
+
+            <br />
+            <label for="genere-film">Seleziona il tuo genere preferito</label>
+            <input list="genere-film" />
+            <datalist id="genere-film">
+                <option value="1">romantici</option>
+                <option value="2">gialli</option>
+                <option value="3">comici</option>
+                <option value="4">storici</option>
+                <option value="5">fantascienza</option>
+                <option value="6">fantasy</option>
+            </datalist>
+            <br />
+            <details>
+                <summary>Dettagli</summary>
+                <p>Note note note</p>
+            </details>
+            <br />
+            <fieldset>
+                <legend>Esprimi la tua valutazione</legend>
+                <input
+                    type="range"
+                    name="valutazione"
+                    id="valutazione"
+                    min="0"
+                    max="10"
+                    step="1"
+                />
+            </fieldset>
+            <br />
+            <button type="submit">Invia da button</button>
+        </form>
+    </body>
+</html>

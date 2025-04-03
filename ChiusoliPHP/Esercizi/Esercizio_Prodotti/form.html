@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form
+            action="prodotti.php"
+            method="post"
+            enctype="multipart/form-data"
+            style="border: 1px solid orange"
+            id="form1"
+        >
+            <fieldset style="border: 1px solid rgb(0, 0, 255)">
+                <legend>Prodotti</legend>
+                <label for="qta" autocomplete="off">Quantità minima:</label>
+                <input type="number" name="qta" placeholder="Quantità minima" id="qta" />
+            </fieldset>
+            
+            <br />
+            <button type="submit">Invia da button</button>
+        </form>
+    </body>
+</html>

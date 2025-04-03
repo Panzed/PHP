@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 1. creare la prima pagina con il form --> 
+
+    <form
+    action="verifica.php"
+    method="get"
+    enctype="multipart/form-data"
+    style="border: 1px solid orange"
+    id="form1"
+>
+    <fieldset style="border: 1px solid rgb(0, 0, 255)">
+        <legend>Mese:</legend>
+        <label for="qta" autocomplete="off">Inserire numero da 1 a 12:</label>
+        <input type="number" name="mese" placeholder="N.mese" id="mese" />
+    </fieldset>
+
+    <button type="submit">Inserisci Mese</button>
+</form>
+</body>
+</html>

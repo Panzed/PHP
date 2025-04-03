@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form
+      action="action.php"
+      method="post"
+      enctype="multipart/form-data"
+      style="border: 1px solid orange"
+      id="form1"
+    >
+      <fieldset style="border: 1px solid rgb(0, 0, 255)">
+        <legend>Nominativo</legend>
+        <label for="nome" autocomplete="off">Nome:</label>
+        <input type="text" name="nome" placeholder="Nome" id="nome" />
+        <label for="cognome">Cognome</label>
+        <input
+          type="text"
+          name="cognome"
+          placeholder="Cognome"
+          id="cognome"
+          autofocus
+          required
+        />
+      </fieldset>
+
+      <br />
+
+      <button type="submit">Invia da button</button>
+    </form>
+  </body>
+</html>
