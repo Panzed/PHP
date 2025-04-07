@@ -10,7 +10,7 @@
 <body>
     <?php
 
-    include "../../inc\lista-funzioni.php";
+    include "../../inc/lista-funzioni.php";
 
     $post1 = ['titolo' => "sport", 'visualizzazioni' => "10", 'pubblicazione' => '2025-01-22'];
     $post2 = ['titolo' => "Alimentazione", 'visualizzazioni' => "20", 'pubblicazione' => '2024-10-15'];
@@ -116,7 +116,7 @@
 
     foreach ($posts as $i => $post) {
         echo $post['titolo'];
-        echo "<a href='post.php?" . $i . "'> Clicca qui </a>";
+        echo "<a href='post.php?post=" . $i . "'> Clicca qui </a>";
 
         echo "<br>";
     }
