@@ -7,7 +7,8 @@
 </head>
 <body>
     <?php
-
+    include("../inc/lista-funzioni.php");
+    include_once("./inc/connessione.php");
     ?>
 </body>
 </html>
