@@ -48,9 +48,7 @@ echo "<br>";
 function anniDiff($data){
     $array = explode("-", $data);
     $anno = $array[0];
-    $dataOggi = date("Y-m-d");
-    $arrayOggi = explode("-", $dataOggi);
-    $annoOggi = $arrayOggi[0];
+    $annoOggi = date("Y");
     $differenza = $annoOggi - $anno;
     return $differenza;
 }

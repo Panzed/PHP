@@ -1,3 +1,8 @@
+<?php
+include("../inc/lista-funzioni.php");
+include_once("./inc/connessione.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,48 +16,43 @@
 
 <body>
     <?php
-    include_once("./inc/connessione.php");
 
     if ($_GET && $_GET['ID'] > 0) {
         $id = $_GET['ID'];
     }
 
-    $query = "SELECT * FROM anagrafica WHERE ana_id = :id ";
+    $query = "SELECT * 
+            FROM person
+            WHERE BusinessEntityID = :id ";
     try {
         $st = $conn->prepare($query);
         $st->bindParam(":id", $id);
         $st->execute();
         $rows = $st->fetchAll(PDO::FETCH_ASSOC);
-
-        //echo "operazione eseguita!";
     } catch (PDOException $e) {
-        echo "Errore nell'esecuzione della query " . $e->getMessage();
+        echo "Errore nell'estrazione dei dati " . $e->getMessage();
     }
 
-    echo " <table class='table table-striped'>";
-
-
-
+    // Stampo il risultato in tabella
     if ($rows) {
+        echo "<table class='table table-striped'>";
+        echo "<tr>";
         foreach ($rows[0] as $k => $v) {
             echo "<th>" . $k . "</th>";
         }
+        echo "</tr>";
         foreach ($rows as $row) {
             echo "<tr>";
 
-            //per ogni elemento di $row    
             foreach ($row as $v) {
                 echo "<td>" . $v . "</td>";
             }
+            echo "</tr>";
         }
     }
-
-
-
-
+    echo "</table>";
 
     ?>
-
 </body>
 
 </html>

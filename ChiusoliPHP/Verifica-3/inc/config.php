@@ -1,5 +1,5 @@
 <?php
 $host = "localhost:10010";
-$dbname = "gita_genitori_figli";
+$dbname = "adventureworks2019_2025";
 $user = "root";
 $pass = "root";
