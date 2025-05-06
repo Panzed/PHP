@@ -9,9 +9,12 @@
 
 <body>
     <h1>Accedi all'area riservata</h1>
-    <?php 
-    if(isset($_GET['msg'])){
-        echo "Credenziali non corrette. Riprovare";
+    <?php
+    if (isset($_GET['msg'])) {
+        if ($_GET['msg'] == "errore")
+            echo "Credenziali non corrette. Riprovare";
+        else if ($_GET['msg'] == "loggati")
+            echo "Prima devi fare il login";
     }
     ?>
     <form

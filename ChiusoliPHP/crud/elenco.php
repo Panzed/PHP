@@ -1,4 +1,15 @@
 <?php
+session_start();
+if (! $_SESSION['loggato']) {
+    //redirect a index.php
+    header('Location: index.php?msg=loggati');
+}
+$x = $_SESSION['user_n_login'];
+$y = $_SESSION['session_n_login'];
+echo "Bentornato, ti ho già visto $x volte, $y in questa sessione!";
+
+
+
 include_once("./inc/connessione.php");
 //ora conosco $conn
 
@@ -52,9 +63,9 @@ $rows = [];
                 WHERE 
                 (FirstName LIKE :nome
                 OR LastName LIKE :nome)
-                AND person.ModifiedDate <= :data
+--                AND person.ModifiedDate <= :data
 
-                -- LIMIT 100
+                LIMIT 100
             ";
 
     try {
